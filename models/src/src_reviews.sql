@@ -1,8 +1,6 @@
-with raw_reviews as (
-    select *
-    from raw.raw_reviews
-)
-select listing_id,
+with raw_reviews as (select * from raw.raw_reviews)
+select
+    listing_id,
     date review_date,
     reviewer_name,
     comments review_text,
